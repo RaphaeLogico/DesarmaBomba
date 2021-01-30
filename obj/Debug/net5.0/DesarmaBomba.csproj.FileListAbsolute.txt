@@ -1,0 +1,16 @@
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.exe
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.deps.json
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.runtimeconfig.json
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.runtimeconfig.dev.json
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.dll
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\ref\DesarmaBomba.dll
+D:\Dev\DesarmaBomba\DesarmaBomba\bin\Debug\net5.0\DesarmaBomba.pdb
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.csprojAssemblyReference.cache
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.AssemblyInfoInputs.cache
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.AssemblyInfo.cs
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.csproj.CoreCompileInputs.cache
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.dll
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\ref\DesarmaBomba.dll
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.pdb
+D:\Dev\DesarmaBomba\DesarmaBomba\obj\Debug\net5.0\DesarmaBomba.genruntimeconfig.cache
