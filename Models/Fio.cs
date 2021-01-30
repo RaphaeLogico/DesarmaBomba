@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace DesarmaBomba.Models
@@ -8,15 +7,10 @@ namespace DesarmaBomba.Models
         public int Seq { get; set; }
         public string Cor { get; set; }
         public bool Explode { get; set; }
-
     }
 
     public class Fios<Fio>
     {
          public List<Fio> Cabos { get; set; }
-
-  
     }
-
-
 }

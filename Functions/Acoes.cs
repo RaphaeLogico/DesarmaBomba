@@ -11,64 +11,14 @@ namespace DesarmaBomba.Functions
         {
             var Fios = new List<Fio>();
 
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 1,
-                    Cor = "Branco",
-                    Explode = false
-                }
-            );
-
-
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 2,
-                    Cor = "Vermelho",
-                    Explode = false
-                }
-            );
-
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 3,
-                    Cor = "Preto",
-                    Explode = false
-                }
-            );
-
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 4,
-                    Cor = "Laranja",
-                    Explode = false
-                }
-            );
-
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 5,
-                    Cor = "Verde",
-                    Explode = false
-                }
-            );
-
-            Fios.Add(
-                new Fio
-                {
-                    Seq = 6,
-                    Cor = "Roxo",
-                    Explode = false
-                }
-            );
-
+            Fios.Add(new Fio{Seq = 1, Cor = "Branco", Explode = false});
+            Fios.Add(new Fio{Seq = 2, Cor = "Vermelho", Explode = false});
+            Fios.Add(new Fio{Seq = 3, Cor = "Preto", Explode = false});
+            Fios.Add(new Fio{Seq = 4, Cor = "Laranja", Explode = false});
+            Fios.Add(new Fio{Seq = 5, Cor = "Verde", Explode = false});
+            Fios.Add(new Fio{Seq = 6, Cor = "Roxo", Explode = false});
             return Fios;
         }
-
         public bool Corta(int fio, List<Fio> Fios)
         {
             if (Fios.Where(x => x.Seq == fio).FirstOrDefault().Explode)
@@ -89,9 +39,7 @@ namespace DesarmaBomba.Functions
                 return true;
             }
 
-            Fios.RemoveAt(Fios.IndexOf(Fios.Where(x => x.Seq == fio).FirstOrDefault()));
-            // Fios.Remove(new Fio(){Seq=fio});
-
+            Fios.RemoveAt(Fios.IndexOf(Fios.Where(x => x.Seq == fio).FirstOrDefault()));            
             switch (fio)
             {
                 case 1:
@@ -106,7 +54,7 @@ namespace DesarmaBomba.Functions
                     Fios.ForEach(c => c.Explode = false);
                     Fios.Where(x => x.Cor == "Verde" || x.Cor == "Branco" || x.Cor == "Laranja").ToList().ForEach(c => c.Explode = true);
                     break;
-                case 4:
+                case 4 or 6:
                     Fios.ForEach(c => c.Explode = false);
                     Fios.Where(x => x.Cor != "Vermelho" && x.Cor != "Preto").ToList().ForEach(c => c.Explode = true);
                     break;
@@ -114,17 +62,9 @@ namespace DesarmaBomba.Functions
                     Fios.ForEach(c => c.Explode = false);
                     Fios.Where(x => x.Cor != "Laranja" && x.Cor != "Branco").ToList().ForEach(c => c.Explode = true);
                     break;
-                case 6:
-                    Fios.ForEach(c => c.Explode = false);
-                    Fios.Where(x => x.Cor != "Vermelho" && x.Cor != "Preto").ToList().ForEach(c => c.Explode = true);
-                    break;
-
             }
-
             return false;
-
         }
-
         public void Desarma(List<Fio> Fios)
         {
             var Acoes = new Acoes();
@@ -152,20 +92,15 @@ namespace DesarmaBomba.Functions
                 if (Fios.Count() == 0)
                 {
                     System.Console.WriteLine("Bomba desarmada!!!!");
-                    Console.WriteLine("                                                         c=====e");
-                    Console.WriteLine("                               ''''''                       H   ");
+                    Console.WriteLine("                                 ''  '                   c=====e");
+                    Console.WriteLine("                               ''  ''                       H   ");
                     Console.WriteLine("   ____________                `     ,                  _,,_H__ ");
                     Console.WriteLine("  (__((__((___()               |    |                  //|     |");
                     Console.WriteLine(" (__((__((___()()_______________*  *__________________// |ACME |");
                     Console.WriteLine("(__((__((___()()()---------------  -------------------'  |_____|");
                     return;                    
                 }
-
             }
-
-
         }
     }
-
-
 }
